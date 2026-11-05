@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAVE 101.5 FM — Contact</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>WAVE 101.5 FM — Radio Station Website</h1>
+  <nav class="main">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="hosts.html">Hosts</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="account.html">My Account</a>
+    <a href="admin.html">Staff Admin</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ SR-07: Contact form and song requests ============ -->
+  <section class="card">
+    <h2>Contact the Station</h2>
+    <p class="hint">Send us a message or request a song. Fields marked * are required.</p>
+
+    <form>
+      <div class="field">
+        <label for="name">Your name *</label>
+        <input id="name" name="name" type="text" placeholder="Jane Doe">
+      </div>
+
+      <div class="field">
+        <label for="email">Email address *</label>
+        <input id="email" name="email" type="email" placeholder="jane@example.com">
+      </div>
+
+      <div class="field">
+        <label for="type">What is this about? *</label>
+        <select id="type" name="type">
+          <option>General message</option>
+          <option>Song request</option>
+          <option>Advertising / sponsorship</option>
+          <option>Report a problem with the stream</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="song">Song title / artist (for requests)</label>
+        <input id="song" name="song" type="text" placeholder="Artist — Song title">
+      </div>
+
+      <div class="field">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" placeholder="Type your message here..."></textarea>
+      </div>
+
+      <button type="button">Send message</button>
+      <button type="button" class="secondary">Clear</button>
+    </form>
+  </section>
+
+  <!-- ============ SR-08: Social media links ============ -->
+  <section class="card">
+    <h2>Other Ways to Reach Us</h2>
+    <div class="social">
+      <a href="#" class="social-link">Instagram</a>
+      <a href="#" class="social-link">X / Twitter</a>
+      <a href="#" class="social-link">Facebook</a>
+    </div>
+    <p class="hint">Studio phone: (555) 010-1015 &middot; Email: contact@wave1015.example</p>
+  </section>
+
+</main>
+
+<footer class="site">
+  <p>GUI Prototype &mdash; static wireframe only, no functionality. &copy; WAVE 101.5 FM.</p>
+</footer>
+
+</body>
+</html>

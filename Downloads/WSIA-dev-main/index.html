@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAVE 101.5 FM — Staff Admin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>WAVE 101.5 FM — Radio Station Website</h1>
+  <nav class="main">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="hosts.html">Hosts</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html">My Account</a>
+    <a href="admin.html" class="active">Staff Admin</a>
+  </nav>
+</header>
+
+<main>
+
+  <p class="note">
+    <strong>Authorized staff only.</strong> A real login screen would gate this area.
+    It is not part of the prototype.
+  </p>
+
+  <!-- ============ SR-04: Schedule management ============ -->
+  <section class="card">
+    <h2>Manage Show Schedule</h2>
+
+    <table>
+      <caption>Existing programs</caption>
+      <thead>
+        <tr><th>Program</th><th>Host</th><th>Day(s)</th><th>Start</th><th>End</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Morning Drive</td><td>Alex Rivera</td><td>Mon&ndash;Fri</td><td>6:00 AM</td><td>10:00 AM</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Midday Mix</td><td>Priya Shah</td><td>Mon&ndash;Fri</td><td>10:00 AM</td><td>2:00 PM</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>The Late Set</td><td>Franklin Lee</td><td>Saturday</td><td>8:00 PM</td><td>12:00 AM</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Add a program</h3>
+    <form>
+      <div class="grid">
+        <div class="field">
+          <label for="p-name">Program name</label>
+          <input id="p-name" type="text" placeholder="Evening Jazz">
+        </div>
+        <div class="field">
+          <label for="p-host">Host</label>
+          <input id="p-host" type="text" placeholder="Host name">
+        </div>
+      </div>
+      <div class="grid">
+        <div class="field">
+          <label for="p-day">Day(s)</label>
+          <select id="p-day">
+            <option>Mon &ndash; Fri</option>
+            <option>Saturday</option>
+            <option>Sunday</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="p-start">Start time</label>
+          <input id="p-start" type="time">
+        </div>
+        <div class="field">
+          <label for="p-end">End time</label>
+          <input id="p-end" type="time">
+        </div>
+      </div>
+      <button type="button">Add program</button>
+    </form>
+  </section>
+
+  <!-- ============ SR-05: Announcement management ============ -->
+  <section class="card">
+    <h2>Manage Announcements</h2>
+
+    <table>
+      <caption>Published announcements</caption>
+      <thead>
+        <tr><th>Title</th><th>Posted</th><th>Status</th><th>Actions</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spring Fundraiser Live on Air</td><td>March 12</td><td>Published</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>New Late-Night Show Added</td><td>March 8</td><td>Published</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+        <tr>
+          <td>Studio Closed for Maintenance</td><td>March 3</td><td>Draft</td>
+          <td class="actions"><button type="button" class="small">Edit</button>
+              <button type="button" class="small danger">Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Create an announcement</h3>
+    <form>
+      <div class="field">
+        <label for="a-title">Title</label>
+        <input id="a-title" type="text" placeholder="Announcement title">
+      </div>
+      <div class="field">
+        <label for="a-body">Message</label>
+        <textarea id="a-body" placeholder="Announcement text shown to listeners..."></textarea>
+      </div>
+      <button type="button">Publish</button>
+      <button type="button" class="secondary">Save as draft</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site">
+  <p>GUI Prototype &mdash; static wireframe only, no functionality. &copy; WAVE 101.5 FM.</p>
+</footer>
+
+</body>
+</html>
