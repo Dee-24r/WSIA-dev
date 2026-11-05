@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAVE 101.5 FM — My Account</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>WAVE 101.5 FM — Radio Station Website</h1>
+  <nav class="main">
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="hosts.html">Hosts</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html" class="active">My Account</a>
+    <a href="admin.html">Staff Admin</a>
+  </nav>
+</header>
+
+<main>
+
+  <p class="note">
+    <strong>Future enhancement (SR-09).</strong> Listener accounts are out of scope for
+    the initial release. This screen is a placeholder for the planned feature.
+  </p>
+
+  <!-- ============ SR-09: User accounts (future) ============ -->
+  <section class="card">
+    <h2>Log In</h2>
+    <form>
+      <div class="field">
+        <label for="login-email">Email</label>
+        <input id="login-email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="login-pass">Password</label>
+        <input id="login-pass" type="password" placeholder="••••••••">
+      </div>
+      <button type="button">Log in</button>
+      <button type="button" class="secondary">Forgot password?</button>
+    </form>
+  </section>
+
+  <section class="card">
+    <h2>Create an Account</h2>
+    <form>
+      <div class="field">
+        <label for="reg-name">Display name</label>
+        <input id="reg-name" type="text" placeholder="Listener name">
+      </div>
+      <div class="field">
+        <label for="reg-email">Email</label>
+        <input id="reg-email" type="email" placeholder="you@example.com">
+      </div>
+      <div class="field">
+        <label for="reg-pass">Password</label>
+        <input id="reg-pass" type="password" placeholder="••••••••">
+      </div>
+      <button type="button">Register</button>
+    </form>
+
+    <h3>Planned personalization</h3>
+    <ul class="plain">
+      <li>Save favourite shows</li>
+      <li>Faster song requests (details pre-filled)</li>
+      <li>Email reminders for favourite programs</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site">
+  <p>GUI Prototype &mdash; static wireframe only, no functionality. &copy; WAVE 101.5 FM.</p>
+</footer>
+
+</body>
+</html>

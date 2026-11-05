@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAVE 101.5 FM — Home</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>WAVE 101.5 FM — Radio Station Website</h1>
+  <nav class="main">
+    <a href="index.html" class="active">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="hosts.html">Hosts</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html">My Account</a>
+    <a href="admin.html">Staff Admin</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ SR-01: Live radio streaming ============ -->
+  <section class="card">
+    <h2>Listen Live</h2>
+    <div class="player">
+      <div class="ph player-art">[ Station / Album Art ]</div>
+      <div class="player-controls">
+        <p class="now-playing">Now Playing: <strong>Midday Mix</strong> with Priya Shah</p>
+        <div class="buttons">
+          <button type="button">&#9654; Play</button>
+          <button type="button" class="secondary">&#9632; Stop</button>
+        </div>
+        <label class="volume">Volume
+          <input type="range" min="0" max="100" value="70">
+        </label>
+        <p class="hint">Stream status: <em>offline</em> (placeholder)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SR-05: Announcements ============ -->
+  <section class="card">
+    <h2>Announcements</h2>
+    <div class="grid">
+      <article class="tile">
+        <h3>Spring Fundraiser Live on Air</h3>
+        <p class="meta">Posted: March 12 &middot; by Station Staff</p>
+        <p>Tune in all week for our pledge drive. Every donation keeps the signal alive.</p>
+      </article>
+      <article class="tile">
+        <h3>New Late-Night Show Added</h3>
+        <p class="meta">Posted: March 8 &middot; by Station Staff</p>
+        <p>&ldquo;The Late Set&rdquo; now airs Saturdays from 8 PM to midnight.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ SR-02: Schedule preview ============ -->
+  <section class="card">
+    <h2>On Air Today</h2>
+    <table>
+      <caption>Weekday lineup (see full schedule for the complete week)</caption>
+      <thead>
+        <tr><th>Program</th><th>Host</th><th>Start</th><th>End</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Morning Drive</td><td>Alex Rivera</td><td>6:00 AM</td><td>10:00 AM</td></tr>
+        <tr><td>Midday Mix</td><td>Priya Shah</td><td>10:00 AM</td><td>2:00 PM</td></tr>
+        <tr><td>Afternoon Traffic</td><td>Sam Okafor</td><td>2:00 PM</td><td>6:00 PM</td></tr>
+      </tbody>
+    </table>
+    <p><a href="schedule.html">View the full weekly schedule &rarr;</a></p>
+  </section>
+
+  <!-- ============ SR-08: Social media links ============ -->
+  <section class="card">
+    <h2>Follow the Station</h2>
+    <div class="social">
+      <a href="#" class="social-link">Instagram</a>
+      <a href="#" class="social-link">X / Twitter</a>
+      <a href="#" class="social-link">Facebook</a>
+      <a href="#" class="social-link">YouTube</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <p>GUI Prototype &mdash; static wireframe only, no functionality. &copy; WAVE 101.5 FM.</p>
+</footer>
+
+</body>
+</html>

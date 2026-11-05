@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WAVE 101.5 FM — Schedule</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <h1>WAVE 101.5 FM — Radio Station Website</h1>
+  <nav class="main">
+    <a href="index.html">Home</a>
+    <a href="schedule.html" class="active">Schedule</a>
+    <a href="hosts.html">Hosts</a>
+    <a href="contact.html">Contact</a>
+    <a href="account.html">My Account</a>
+    <a href="admin.html">Staff Admin</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ============ SR-02: Radio show schedule ============ -->
+  <section class="card">
+    <h2>Weekly Show Schedule</h2>
+    <table>
+      <caption>All times local. Schedule is maintained by station staff.</caption>
+      <thead>
+        <tr>
+          <th>Program</th>
+          <th>Host</th>
+          <th>Day(s)</th>
+          <th>Start</th>
+          <th>End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Morning Drive</td><td>Alex Rivera</td><td>Mon &ndash; Fri</td><td>6:00 AM</td><td>10:00 AM</td></tr>
+        <tr><td>Midday Mix</td><td>Priya Shah</td><td>Mon &ndash; Fri</td><td>10:00 AM</td><td>2:00 PM</td></tr>
+        <tr><td>Afternoon Traffic</td><td>Sam Okafor</td><td>Mon &ndash; Fri</td><td>2:00 PM</td><td>6:00 PM</td></tr>
+        <tr><td>Weekend Wake-Up</td><td>Louis Grant</td><td>Saturday</td><td>8:00 AM</td><td>12:00 PM</td></tr>
+        <tr><td>The Late Set</td><td>Franklin Lee</td><td>Saturday</td><td>8:00 PM</td><td>12:00 AM</td></tr>
+        <tr><td>The Acoustic Hour</td><td>Mohammed Ali</td><td>Sunday</td><td>10:00 AM</td><td>12:00 PM</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Filter</h2>
+    <form>
+      <div class="field">
+        <label for="day">Show me</label>
+        <select id="day">
+          <option>All days</option>
+          <option>Weekdays</option>
+          <option>Saturday</option>
+          <option>Sunday</option>
+        </select>
+      </div>
+      <button type="button" class="secondary">Apply</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site">
+  <p>GUI Prototype &mdash; static wireframe only, no functionality. &copy; WAVE 101.5 FM.</p>
+</footer>
+
+</body>
+</html>
